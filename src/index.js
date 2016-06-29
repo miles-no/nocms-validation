@@ -39,7 +39,7 @@ module.exports = {
             return false;
           }
         }
-        return moment(value, 'DD.MM.YYYY').format('DD.MM.YYYY') === value;
+        return false;
       }
 
       if (validationRule === 'int') {
