@@ -2,7 +2,7 @@ const noValidation = require('norwegian-validation');
 const moment = require('moment');
 
 module.exports = {
-  validate: function validate(value, validationRule, isRequired) {
+  validate: function validate(value, validationRule = 'notEmpty', isRequired) {
     if (!value && isRequired) {
       return false;
     } else if (!value && !isRequired) {
