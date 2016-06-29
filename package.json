@@ -4,8 +4,9 @@
   "description": "Validation rules for form",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "tape test/*.js | tap-spec",
     "build": "webpack",
+    "coverage": "tap --cov --coverage-report=lcov test/*.js",
     "prepublish": "babel ./src --out-dir ./lib --source-maps --presets es2015,stage-2 && browserify ./lib/index.js -o ./build/nocms-validation.js --standalone NoCMSValidation && uglifyjs ./build/nocms-validation.js --compress --mangle --output ./build/nocms-validation.min.js --source-map ./build/nocms-validation.min.js.map"
   },
   "dependencies": {
@@ -22,6 +23,9 @@
     "eslint": "^2.9.0",
     "eslint-config-airbnb-base": "^3.0.1",
     "eslint-plugin-import": "^1.7.0",
+    "tap": "^5.8.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.0",
     "uglify-js": "^2.6.4"
   },
   "author": "",
