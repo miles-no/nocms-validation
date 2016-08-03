@@ -4,7 +4,7 @@ const sut = require('../');
 
 test('Validate organization numbers', (t) => {
   t.plan(3);
-  const correct = sut.validate(00989568078, 'orgNumber', true);
+  const correct = sut.validate(989568078, 'orgNumber', true);
   const incorrect = sut.validate('-1', 'orgNumber', true);
   const nullValue = sut.validate(null, 'orgNumber', true);
   t.ok(correct, 'Given a valid organization number, validation should be successful');
