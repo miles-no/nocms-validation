@@ -10,7 +10,6 @@
     "prepublish": "babel ./src --out-dir ./lib --source-maps --presets es2015"
   },
   "dependencies": {
-    "moment": "^2.13.0",
     "norwegian-validation": "git+ssh://git@bitbucket.org/nocms/norwegian-validation.git"
   },
   "devDependencies": {
