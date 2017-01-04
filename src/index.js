@@ -1,5 +1,4 @@
 const noValidation = require('norwegian-validation');
-const moment = require('moment');
 
 module.exports = {
   validate: function validate(value, validationRule = 'notEmpty', isRequired) {
