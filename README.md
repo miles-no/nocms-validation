@@ -1,4 +1,4 @@
-# nocms-forms
+# nocms-validation
 
 Validation of forms fields.
 
