@@ -2,6 +2,7 @@
 
 Validation of forms fields.
 
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
 ## Installation
 
@@ -34,3 +35,7 @@ validation.validate(this.state.value, 'email', this.props.required)
 | 'confirm'         | Matches booleans, used for confirmation checkboxes                |
 | 'internalUri'     | Matches a URI to a resource on the same domain. `/test`           |
 | 'regex'           | A string with a custom regex to match the value                   |
+
+## Commit message format and publishing
+
+This repository is published using `semantic-release`, with the default [AngularJS Commit Message Conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit).
