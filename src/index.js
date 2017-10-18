@@ -1,3 +1,4 @@
+/* eslint no-useless-escape: off */
 const noValidation = require('norwegian-validation');
 
 module.exports = {

@@ -9,7 +9,8 @@
     "coverage": "tap --cov --coverage-report=lcov test/*.js",
     "bump-version": "./node_modules/bump-version/bin/bump patch",
     "prepublish": "babel ./src --out-dir ./lib --source-maps --presets es2015",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "eslint": "eslint ."
   },
   "dependencies": {
     "norwegian-validation": "^1.0.1"
@@ -18,8 +19,8 @@
     "babel-cli": "^6.18.0",
     "babel-preset-es2015": "^6.18.0",
     "condition-circle": "^1.5.0",
-    "eslint": "^3.12.2",
-    "eslint-config-webteam": "^1.1.1",
+    "eslint": "^4.9.0",
+    "eslint-config-webteam": "^2.0.0",
     "eslint-plugin-import": "^2.2.0",
     "semantic-release": "^6.3.6",
     "tap": "^5.8.0",
