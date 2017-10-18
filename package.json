@@ -22,7 +22,7 @@
     "eslint": "^4.9.0",
     "eslint-config-webteam": "^2.0.0",
     "eslint-plugin-import": "^2.2.0",
-    "semantic-release": "^6.3.6",
+    "semantic-release": "^8.2.0",
     "tap": "^5.8.0",
     "tap-spec": "^4.1.1",
     "tape": "^4.6.0"
