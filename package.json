@@ -12,6 +12,7 @@
     "eslint": "eslint ."
   },
   "dependencies": {
+    "nocms-events": "^1.2.0",
     "norwegian-validation": "^1.0.1"
   },
   "devDependencies": {
