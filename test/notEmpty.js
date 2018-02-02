@@ -21,3 +21,19 @@ test('Validate not empty array', (t) => {
   t.notOk(noRule, 'The same goes for required array value without a specified validation rule');
   t.ok(valid, 'Should accept arrays with content');
 });
+
+test('Validate not empty boolean', (t) => {
+  t.plan(1);
+  const actual = sut.validate(true, 'notEmpty', true);
+  const expected = true;
+
+  t.equal(actual, expected, 'Validation should pass if true is passed in (e.g. for required checkboxes)');
+});
+
+test('Validate not empty boolean', (t) => {
+  t.plan(1);
+  const actual = sut.validate(false, 'notEmpty', true);
+  const expected = false;
+
+  t.equal(actual, expected, 'Validation should fail if false is passed in (e.g. a required checkbox not being checked');
+});
