@@ -27,6 +27,7 @@ validation.validate(this.state.value, 'email', this.props.required)
 | `validationRule`  | description                                                       |
 |-------------------|-------------------------------------------------------------------|
 | `function(value)` | Custom function returning a boolean                               |
+| 'notEmpty'        | Check if the value is set                                         |
 | 'email'           | Evaluates email addresses                                         |
 | 'phone'           | Norwegian phone numbers, 8 digits with optional country code      |
 | 'datetime'        | Matches ISO datetime YYYY-MM-DDTHH:MM, no timezone                |
