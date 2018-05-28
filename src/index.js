@@ -2,7 +2,7 @@
 const noValidation = require('norwegian-validation');
 
 module.exports = {
-  validate: function validate(value, validationRule = 'notEmpty', isRequired) {
+  validate: function validate(value, validationRule = 'notEmpty', isRequired, context) {
     if (!value && isRequired) {
       return false;
     }
@@ -11,7 +11,7 @@ module.exports = {
     }
 
     if (typeof validationRule === 'function') {
-      return validationRule(value);
+      return validationRule(value, context);
     }
 
     if (validationRule === 'email') {
